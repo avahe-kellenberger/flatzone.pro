@@ -56,8 +56,11 @@ body {
 }
 
 .disabled-tile {
-  filter: grayscale(1);
   pointer-events: none;
+}
+
+.disabled-tile img {
+  filter: grayscale(1);
 }
 
 @media screen and (max-width: 526px) {
