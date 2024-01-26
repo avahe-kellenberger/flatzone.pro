@@ -112,12 +112,6 @@ input:focus {
   outline: navy;
 }
 
-.mu-info-text {
-  font-size: 2ch;
-  margin-top: 2em;
-  color: #E7E7E8;
-}
-
 .mu-character-tile {
   margin-left: auto;
   margin-right: auto;
@@ -134,9 +128,19 @@ input:focus {
   text-align: center;
 }
 
-@media screen and (min-width: 800px) {
+.mu-info-text {
+  width: 100%;
+  font-size: 2ch;
+  margin-top: 2em;
+  color: #E7E7E8;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-device-width: 800px) {
   .mu-info-text {
-    width: 800px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
