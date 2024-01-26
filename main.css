@@ -11,6 +11,16 @@ body {
   width: 100%;
 }
 
+.top-bar a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #E7E7E8; 
+}
+
+.top-bar a:hover {
+  text-decoration: underline;
+}
+
 .title {
   display: inline-flex;
   font-size: 38px;
@@ -24,16 +34,6 @@ body {
   font-size: 24px;
   margin-top: 1em;
   margin-left: 1em;
-}
-
-.top-bar a {
-  display: inline-flex;
-  text-decoration: none;
-  color: #E7E7E8; 
-}
-
-.top-bar a:hover {
-  text-decoration: underline;
 }
 
 .characters-container {
@@ -154,7 +154,7 @@ input:focus {
       height: 28em;
   }
 
-  .character-name {
+  .mu-character-tile .character-name {
       font-size: 72px;
   }
 }
