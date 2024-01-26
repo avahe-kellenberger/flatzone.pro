@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>app</title>
+</head>
+
+<body id="body" class="site">
+    <div class="top-bar">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <h1 class="title">
+            <a href="">Flatzone</a>
+        </h1>
+
+        <a href="https://discord.gg/HBkR7eH" target="_blank">
+            <h2 class="title-link">GnW Discord</h2>
+        </a>
+    </div>
+
+    <div class="searchbar-container">
+        <input autofocus class="searchbar" placeholder="Search..." oninput="filterBySearch(this.value)" />
+    </div>
+
+    <div class="characters-container">
+        <a class="character-tile disabled-tile" href="characters/banjo_and_kazooie.html"
+            charactername="banjo_and_kazooie">
+            <img src="assets/images/banjo_and_kazooie.png" />
+            <h1 class="character-name">
+                Banjo & Kazooie
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/bayonetta.html" charactername="bayonetta">
+            <img src="assets/images/bayonetta.png" />
+            <h1 class="character-name">
+                Bayonetta
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/bowser.html" charactername="bowser">
+            <img src="assets/images/bowser.png" />
+            <h1 class="character-name">
+                Bowser
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/bowser_jr.html" charactername="bowser_jr">
+            <img src="assets/images/bowser_jr.png" />
+            <h1 class="character-name">
+                Bowser Jr.
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/byleth.html" charactername="byleth">
+            <img src="assets/images/byleth.png" />
+            <h1 class="character-name">
+                Byleth
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/captain_falcon.html" charactername="captain_falcon">
+            <img src="assets/images/captain_falcon.png" />
+            <h1 class="character-name">
+                Captain Falcon
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/chrom.html" charactername="chrom">
+            <img src="assets/images/chrom.png" />
+            <h1 class="character-name">
+                Chrom
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/cloud.html" charactername="cloud">
+            <img src="assets/images/cloud.png" />
+            <h1 class="character-name">
+                Cloud
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/corrin.html" charactername="corrin">
+            <img src="assets/images/corrin.png" />
+            <h1 class="character-name">
+                Corrin
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/daisy.html" charactername="daisy">
+            <img src="assets/images/daisy.png" />
+            <h1 class="character-name">
+                Daisy
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/dark_pit.html" charactername="dark_pit">
+            <img src="assets/images/dark_pit.png" />
+            <h1 class="character-name">
+                Dark Pit
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/dark_samus.html" charactername="dark_samus">
+            <img src="assets/images/dark_samus.png" />
+            <h1 class="character-name">
+                Dark Samus
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/diddy_kong.html" charactername="diddy_kong">
+            <img src="assets/images/diddy_kong.png" />
+            <h1 class="character-name">
+                Diddy Kong
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/donkey_kong.html" charactername="donkey_kong">
+            <img src="assets/images/donkey_kong.png" />
+            <h1 class="character-name">
+                Donkey Kong
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/dr_mario.html" charactername="dr_mario">
+            <img src="assets/images/dr_mario.png" />
+            <h1 class="character-name">
+                Dr. Mario
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/duck_hunt.html" charactername="duck_hunt">
+            <img src="assets/images/duck_hunt.png" />
+            <h1 class="character-name">
+                Duck Hunt
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/falco.html" charactername="falco">
+            <img src="assets/images/falco.png" />
+            <h1 class="character-name">
+                Falco
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/fox.html" charactername="fox">
+            <img src="assets/images/fox.png" />
+            <h1 class="character-name">
+                Fox
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/ganondorf.html" charactername="ganondorf">
+            <img src="assets/images/ganondorf.png" />
+            <h1 class="character-name">
+                Ganondorf
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/greninja.html" charactername="greninja">
+            <img src="assets/images/greninja.png" />
+            <h1 class="character-name">
+                Greninja
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/hero.html" charactername="hero">
+            <img src="assets/images/hero.png" />
+            <h1 class="character-name">
+                Hero
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/ice_climbers.html" charactername="ice_climbers">
+            <img src="assets/images/ice_climbers.png" />
+            <h1 class="character-name">
+                Ice Climbers
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/ike.html" charactername="ike">
+            <img src="assets/images/ike.png" />
+            <h1 class="character-name">
+                Ike
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/incineroar.html" charactername="incineroar">
+            <img src="assets/images/incineroar.png" />
+            <h1 class="character-name">
+                Incineroar
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/inkling.html" charactername="inkling">
+            <img src="assets/images/inkling.png" />
+            <h1 class="character-name">
+                Inkling
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/isabelle.html" charactername="isabelle">
+            <img src="assets/images/isabelle.png" />
+            <h1 class="character-name">
+                Isabelle
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/jigglypuff.html" charactername="jigglypuff">
+            <img src="assets/images/jigglypuff.png" />
+            <h1 class="character-name">
+                Jigglypuff
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/joker.html" charactername="joker">
+            <img src="assets/images/joker.png" />
+            <h1 class="character-name">
+                Joker
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/kazuya.html" charactername="kazuya">
+            <img src="assets/images/kazuya.png" />
+            <h1 class="character-name">
+                Kazuya
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/ken.html" charactername="ken">
+            <img src="assets/images/ken.png" />
+            <h1 class="character-name">
+                Ken
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/king_dedede.html" charactername="king_dedede">
+            <img src="assets/images/king_dedede.png" />
+            <h1 class="character-name">
+                King Dedede
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/king_k_rool.html" charactername="king_k_rool">
+            <img src="assets/images/king_k_rool.png" />
+            <h1 class="character-name">
+                King K. Rool
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/kirby.html" charactername="kirby">
+            <img src="assets/images/kirby.png" />
+            <h1 class="character-name">
+                Kirby
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/link.html" charactername="link">
+            <img src="assets/images/link.png" />
+            <h1 class="character-name">
+                Link
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/little_mac.html" charactername="little_mac">
+            <img src="assets/images/little_mac.png" />
+            <h1 class="character-name">
+                Little Mac
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/lucario.html" charactername="lucario">
+            <img src="assets/images/lucario.png" />
+            <h1 class="character-name">
+                Lucario
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/lucas.html" charactername="lucas">
+            <img src="assets/images/lucas.png" />
+            <h1 class="character-name">
+                Lucas
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/lucina.html" charactername="lucina">
+            <img src="assets/images/lucina.png" />
+            <h1 class="character-name">
+                Lucina
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/luigi.html" charactername="luigi">
+            <img src="assets/images/luigi.png" />
+            <h1 class="character-name">
+                Luigi
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/mario.html" charactername="mario">
+            <img src="assets/images/mario.png" />
+            <h1 class="character-name">
+                Mario
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/marth.html" charactername="marth">
+            <img src="assets/images/marth.png" />
+            <h1 class="character-name">
+                Marth
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/mega_man.html" charactername="mega_man">
+            <img src="assets/images/mega_man.png" />
+            <h1 class="character-name">
+                Mega Man
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/meta_knight.html" charactername="meta_knight">
+            <img src="assets/images/meta_knight.png" />
+            <h1 class="character-name">
+                Meta Knight
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/mewtwo.html" charactername="mewtwo">
+            <img src="assets/images/mewtwo.png" />
+            <h1 class="character-name">
+                Mewtwo
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/mii_brawler.html" charactername="mii_brawler">
+            <img src="assets/images/mii_brawler.png" />
+            <h1 class="character-name">
+                Mii Brawler
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/mii_gunner.html" charactername="mii_gunner">
+            <img src="assets/images/mii_gunner.png" />
+            <h1 class="character-name">
+                Mii Gunner
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/mii_swordfighter.html"
+            charactername="mii_swordfighter">
+            <img src="assets/images/mii_swordfighter.png" />
+            <h1 class="character-name">
+                Mii Swordfighter
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/mii_swordfighter.html"
+            charactername="mii_swordfighter">
+            <img src="assets/images/mii_swordfighter.png" />
+            <h1 class="character-name">
+                Mii Swordfighter
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/min_min.html" charactername="min_min">
+            <img src="assets/images/min_min.png" />
+            <h1 class="character-name">
+                Min Min
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/mr_game_and_watch.html"
+            charactername="mr_game_and_watch">
+            <img src="assets/images/mr_game_and_watch.png" />
+            <h1 class="character-name">
+                Mr. Game & watch
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/mythra.html" charactername="mythra">
+            <img src="assets/images/mythra.png" />
+            <h1 class="character-name">
+                Mythra
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/ness.html" charactername="ness">
+            <img src="assets/images/ness.png" />
+            <h1 class="character-name">
+                Ness
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/olimar.html" charactername="olimar">
+            <img src="assets/images/olimar.png" />
+            <h1 class="character-name">
+                Olimar
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/pac_man.html" charactername="pac_man">
+            <img src="assets/images/pac_man.png" />
+            <h1 class="character-name">
+                Pac Man
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/palutena.html" charactername="palutena">
+            <img src="assets/images/palutena.png" />
+            <h1 class="character-name">
+                Palutena
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/peach.html" charactername="peach">
+            <img src="assets/images/peach.png" />
+            <h1 class="character-name">
+                Peach
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/pichu.html" charactername="pichu">
+            <img src="assets/images/pichu.png" />
+            <h1 class="character-name">
+                Pichu
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/pikachu.html" charactername="pikachu">
+            <img src="assets/images/pikachu.png" />
+            <h1 class="character-name">
+                Pikachu
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/piranha_plant.html" charactername="piranha_plant">
+            <img src="assets/images/piranha_plant.png" />
+            <h1 class="character-name">
+                Piranha Plant
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/pit.html" charactername="pit">
+            <img src="assets/images/pit.png" />
+            <h1 class="character-name">
+                Pit
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/squirtle.html" charactername="squirtle">
+            <img src="assets/images/squirtle.png" />
+            <h1 class="character-name">
+                Squirtle
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/ivysaur.html" charactername="ivysaur">
+            <img src="assets/images/ivysaur.png" />
+            <h1 class="character-name">
+                Ivysaur
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/charizard.html" charactername="charizard">
+            <img src="assets/images/charizard.png" />
+            <h1 class="character-name">
+                Charizard
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/pyra.html" charactername="pyra">
+            <img src="assets/images/pyra.png" />
+            <h1 class="character-name">
+                Pyra
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/richter.html" charactername="richter">
+            <img src="assets/images/richter.png" />
+            <h1 class="character-name">
+                Richter
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/ridley.html" charactername="ridley">
+            <img src="assets/images/ridley.png" />
+            <h1 class="character-name">
+                Ridley
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/rob.html" charactername="rob">
+            <img src="assets/images/rob.png" />
+            <h1 class="character-name">
+                R.O.B.
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/robin.html" charactername="robin">
+            <img src="assets/images/robin.png" />
+            <h1 class="character-name">
+                Robin
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/rosalina_and_luma.html"
+            charactername="rosalina_and_luma">
+            <img src="assets/images/rosalina_and_luma.png" />
+            <h1 class="character-name">
+                Rosalina and Luma
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/roy.html" charactername="roy">
+            <img src="assets/images/roy.png" />
+            <h1 class="character-name">
+                Roy
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/ryu.html" charactername="ryu">
+            <img src="assets/images/ryu.png" />
+            <h1 class="character-name">
+                Ryu
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/samus.html" charactername="samus">
+            <img src="assets/images/samus.png" />
+            <h1 class="character-name">
+                Samus
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/sephiroth.html" charactername="sephiroth">
+            <img src="assets/images/sephiroth.png" />
+            <h1 class="character-name">
+                Sephiroth
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/sheik.html" charactername="sheik">
+            <img src="assets/images/sheik.png" />
+            <h1 class="character-name">
+                Sheik
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/shulk.html" charactername="shulk">
+            <img src="assets/images/shulk.png" />
+            <h1 class="character-name">
+                Shulk
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/simon.html" charactername="simon">
+            <img src="assets/images/simon.png" />
+            <h1 class="character-name">
+                Simon
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/snake.html" charactername="snake">
+            <img src="assets/images/snake.png" />
+            <h1 class="character-name">
+                Snake
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/sonic.html" charactername="sonic">
+            <img src="assets/images/sonic.png" />
+            <h1 class="character-name">
+                Sonic
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/sora.html" charactername="sora">
+            <img src="assets/images/sora.png" />
+            <h1 class="character-name">
+                Sora
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/steve.html" charactername="steve">
+            <img src="assets/images/steve.png" />
+            <h1 class="character-name">
+                Steve
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/terry.html" charactername="terry">
+            <img src="assets/images/terry.png" />
+            <h1 class="character-name">
+                Terry
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/toon_link.html" charactername="toon_link">
+            <img src="assets/images/toon_link.png" />
+            <h1 class="character-name">
+                Toon Link
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/villager.html" charactername="villager">
+            <img src="assets/images/villager.png" />
+            <h1 class="character-name">
+                Villager
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/wario.html" charactername="wario">
+            <img src="assets/images/wario.png" />
+            <h1 class="character-name">
+                Wario
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/wii_fit_trainer.html" charactername="wii_fit_trainer">
+            <img src="assets/images/wii_fit_trainer.png" />
+            <h1 class="character-name">
+                Wii Fit Trainer
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/wolf.html" charactername="wolf">
+            <img src="assets/images/wolf.png" />
+            <h1 class="character-name">
+                Wolf
+            </h1>
+        </a>
+
+        <a class="character-tile" href="characters/yoshi.html" charactername="yoshi">
+            <img src="assets/images/yoshi.png" />
+            <h1 class="character-name">
+                Yoshi
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/young_link.html" charactername="young_link">
+            <img src="assets/images/young_link.png" />
+            <h1 class="character-name">
+                Young Link
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/zelda.html" charactername="zelda">
+            <img src="assets/images/zelda.png" />
+            <h1 class="character-name">
+                Zelda
+            </h1>
+        </a>
+
+        <a class="character-tile disabled-tile" href="characters/zero_suit_samus.html" charactername="zero_suit_samus">
+            <img src="assets/images/zero_suit_samus.png" />
+            <h1 class="character-name">
+                Zero Suit Samus
+            </h1>
+        </a>
+
+    </div>
+</body>
+
+<script>
+    function filterBySearch(searchText) {
+        const characterTiles = [...document.querySelectorAll('.character-tile')];
+        const characterNames = characterTiles.flatMap(tile => {
+            const name = tile.getAttribute('charactername');
+            if (name && fuzzySearchScore(searchText, name) > 0) {
+                return [name];
+            }
+            return [];
+        });
+
+        for (const tile of characterTiles) {
+            if (characterNames.length === 0 || characterNames.includes(tile.getAttribute('characterName'))) {
+                tile.style.display = 'unset';
+            } else {
+                tile.style.display = 'none';
+            }
+        }
+    }
+
+    /**
+     * Fuzzy search scoring.
+     *
+     * @param {string} needle
+     * @param {string} haystack
+     * @returns -1 if the needle contains letters the haystack does not contain,
+     *          or if the needle length exceeds the haystack length.
+     *          0 if no similarities were found,
+     *          greater than 0 based on similarities between the needle and haystack (increasing).
+     */
+    function fuzzySearchScore(needle, haystack) {
+        let result = 0.0;
+        const needleLength = needle.length;
+        const haystackLength = haystack.length;
+        if (needleLength > haystackLength) {
+            return -1.0;
+        }
+
+        if (needleLength === 0.0) {
+            return 0.0;
+        }
+
+        const lowerNeedle = needle.toLowerCase();
+        const lowerHaystack = haystack.toLowerCase();
+
+        let i = 0, j = 0;
+        while (i < needleLength && j < haystackLength) {
+            const letter = lowerNeedle[i];
+            const letterIndex = lowerHaystack.search(letter, j);
+            if (letterIndex - j < 0.0) {
+                return -1;
+            }
+
+            if (areLettersSameCase(needle[i], haystack[j])) {
+                result += 0.5;
+            }
+
+            if (letterIndex === j) {
+                // Letter was consecutive
+                result += 8.0;
+            } else {
+                result += 1.0 - (0.1 * letterIndex);
+                // Move j up to the next found letter.
+                j = letterIndex;
+            }
+
+            if (j === haystackLength - 1 && i < needleLength - 1) {
+                return -1.0;
+            }
+
+            i++;
+            j++;
+        }
+        return result;
+    }
+
+    function areLettersSameCase(c1, c2) {
+        const isC1Lowercase = c1.toLowerCase() === c1;
+        const isC2Lowercase = c2.toLowerCase() === c2;
+        return isC1Lowercase === isC2Lowercase;
+    }
+
+</script>
+
+</html>
