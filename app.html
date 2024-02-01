@@ -663,11 +663,12 @@
 </body>
 
 <script>
+
     function filterBySearch(searchText) {
         const characterTiles = [...document.querySelectorAll('.character-tile')];
         const characterNames = characterTiles.flatMap(tile => {
             const name = tile.getAttribute('charactername');
-            if (name && fuzzySearchScore(searchText, name) > 0) {
+            if (name && fuzzySearchScore(searchText, normalizeCharacterName(name)) > 0) {
                 return [name];
             }
             return [];
@@ -680,6 +681,10 @@
                 tile.style.display = 'none';
             }
         }
+    }
+
+    function normalizeCharacterName(name) {
+        return name.replaceAll("_", " ").replaceAll(".", "");
     }
 
     /**
@@ -710,7 +715,7 @@
         let i = 0, j = 0;
         while (i < needleLength && j < haystackLength) {
             const letter = lowerNeedle[i];
-            const letterIndex = lowerHaystack.search(letter, j);
+            const letterIndex = lowerHaystack.indexOf(letter, j);
             if (letterIndex - j < 0.0) {
                 return -1;
             }
